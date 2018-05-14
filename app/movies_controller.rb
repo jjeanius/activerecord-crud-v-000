@@ -22,13 +22,13 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create(attributes)
 end
 
-def can_be_created_in_a_block(args={"Home Alone"})
+def can_be_created_in_a_block(args={})
   Movie.create do |m|
     m.title = "The Room"
     m.release_date = 2003
   end
 end
-end
+
 
 def can_get_the_first_item_in_the_database
   Movie.first.title
