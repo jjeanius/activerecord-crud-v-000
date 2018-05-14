@@ -28,8 +28,6 @@ def can_be_created_in_a_block(arg={"The Room"})
     m.release_date = 1990
     m.title
   end
-end
-end
 
 def can_get_the_first_item_in_the_database
   Movie.first.title
